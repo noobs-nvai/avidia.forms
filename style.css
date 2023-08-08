@@ -58,6 +58,7 @@ h2 {
   font-weight: 600;
   text-align: center;
   padding-bottom: 2vh;
+  font-family: "Ubuntu", sans-serif !important;
 }
 
 .content {
@@ -65,6 +66,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   padding: 2vh 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .input-box {
@@ -85,7 +87,7 @@ h2 {
 }
 
 .gender-title {
-  font-size: 2vh;
+  font-weight: bold;
 }
 
 .input-box input {
@@ -94,6 +96,7 @@ h2 {
   border-radius: 5px;
   border: 1px solid black;
   outline: none;
+  background-color: var(--bg-color);
 }
 
 .input-box input:is(:focus, :valid) {
@@ -141,8 +144,10 @@ form {
     object-fit: cover;
   }
   h2 {
+    font-size: 3vh;
     margin: 0;
     padding-bottom: 1vh;
+    font-family: "Ubuntu", sans-serif !important;
   }
   .container {
     width: 80%;
@@ -157,14 +162,11 @@ form {
     position: relative;
     max-height: 380px;
     overflow: auto;
-    left: 5%;
-    padding: 0;
+    padding-left: 2vw;
   }
 
   .input-box {
     flex-wrap: wrap;
-    width: 100%;
-    padding-top: 1vh;
   }
 
   .input-box input {
