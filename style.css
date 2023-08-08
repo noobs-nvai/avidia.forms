@@ -13,9 +13,11 @@
 }
 
 .nav img {
+  position: relative;
   height: 80px;
   object-fit: cover;
-  margin: 2vh 0 0 2vw;
+  top: 2vh;
+  left: 2vw;
 }
 
 body {
@@ -142,8 +144,11 @@ form {
 
 @media (width <= 1024px) {
   .nav img {
+    position: relative;
     height: 50px;
     object-fit: cover;
+    top: 2vh;
+    left: 2vw;
   }
 
   h2 {
