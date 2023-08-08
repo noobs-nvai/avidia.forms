@@ -155,7 +155,9 @@ form {
     padding-bottom: 1vh;
     font-family: "Ubuntu", sans-serif !important;
   }
+
   .container {
+    top: 0;
     width: 80%;
     padding: 2vh 2vh 1vh 1vh;
   }
