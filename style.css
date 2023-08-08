@@ -1,5 +1,5 @@
 :root {
-  --orange: #ff4c29;
+  --orange: rgb(248, 225, 212);
   --bg-color: rgb(245, 238, 234);
   --lightorange: rgb(252, 155, 80);
   --darkorange: #e45826;
@@ -65,7 +65,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2vh 0;
+  padding: 3vh 0;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -96,7 +96,8 @@ h2 {
   border-radius: 5px;
   border: 1px solid black;
   outline: none;
-  background-color: var(--bg-color);
+  color: black;
+  background-color: var(--orange);
 }
 
 .input-box input:is(:focus, :valid) {
@@ -186,7 +187,7 @@ form {
   }
 
   .content::-webkit-scrollbar {
-    width: 0;
+    width: 1vw;
   }
 
   .button-container button {
