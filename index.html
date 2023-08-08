@@ -15,61 +15,66 @@
     <title>Avidiaform</title>
   </head>
   <body>
-    <div class="container">
-      <form action="" method="post">
-        <h2>Register Here</h2>
-        <div class="content">
-          <div class="input-box">
-            <label for="name">Full Name</label>
-            <input
-              type="text"
-              placeholder="Enter Full name"
-              name="name"
-              required
-            />
+    <div class="main">
+      <div class="nav">
+        <img src="assets/Nirvana Orange.png" alt="img" class="logo" />
+      </div>
+      <div class="container">
+        <form action="" method="post">
+          <h2>Register Here</h2>
+          <div class="content">
+            <div class="input-box">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                placeholder="Enter Full name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="rollnumber">Roll number</label>
+              <input
+                type="text"
+                placeholder="Enter Roll number"
+                name="roll"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="phone">Phone number</label>
+              <input
+                type="tel"
+                placeholder="Enter Your Phone Number"
+                name="phone"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                placeholder="Enter your Valid Email Adress"
+                name="email"
+                required
+              />
+            </div>
+            <span class="gender-title">Gender</span>
+            <div class="gender-category">
+              <input type="radio" name="gender" id="male" />
+              <label for="gender">Male</label>
+              <input type="radio" name="gender" id="female" />
+              <label for="gender">Female</label>
+            </div>
           </div>
-          <div class="input-box">
-            <label for="rollnumber">Roll number</label>
-            <input
-              type="text"
-              placeholder="Enter Roll number"
-              name="roll"
-              required
-            />
-          </div>
-          <div class="input-box">
-            <label for="phone">Phone number</label>
-            <input
-              type="tel"
-              placeholder="Enter Your Phone Number"
-              name="phone"
-              required
-            />
-          </div>
-          <div class="input-box">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              placeholder="Enter your Valid Email Adress"
-              name="email"
-              required
-            />
-          </div>
-          <span class="gender-title">Gender</span>
-          <div class="gender-category">
-            <input type="radio" name="gender" id="male" />
-            <label for="gender">Male</label>
-            <input type="radio" name="gender" id="female" />
-            <label for="gender">Female</label>
-          </div>
-        </div>
-        <!-- <div class="alert">
+          <!-- <div class="alert">
           <p></p>
         </div> -->
-        <div class="button-container">
-          <button type="submit">Register</button>
-        </div>
-      </form>
+          <div class="button-container">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

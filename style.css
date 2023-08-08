@@ -1,12 +1,47 @@
+:root {
+  --orange: #ff4c29;
+  --bg-color: rgb(245, 238, 234);
+  --lightorange: rgb(252, 155, 80);
+  --darkorange: #e45826;
+}
+
+.nav {
+  position: absolute;
+  width: 100vw;
+  height: fit-content;
+  top: 0 !important;
+}
+
+.nav img {
+  height: 80px;
+  object-fit: cover;
+  margin: 2vh 0 0 2vw;
+}
+
 body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(assets/background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.main {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
+  flex-direction: column;
 }
 
 .container {
+  position: relative;
+  top: 2vh;
   display: flex;
   width: 33%;
   align-items: center;
@@ -15,6 +50,7 @@ body {
   padding: 4vh;
   box-shadow: 0 2vh 3vh black;
   border-radius: 5px;
+  background-color: var(--bg-color);
 }
 
 h2 {
@@ -87,12 +123,12 @@ h2 {
   padding: 1.5vh;
   font-size: 3vh;
   border: none;
-  border-radius: 5px;
-  background-image: linear-gradient(to right, white, black);
-}
-
-.button-container button:hover {
-  background-image: linear-gradient(to right, black, white);
+  border-radius: 7px;
+  background-image: linear-gradient(
+    to right,
+    var(--lightorange),
+    var(--darkorange)
+  );
 }
 
 form {
@@ -100,6 +136,10 @@ form {
 }
 
 @media (width <= 1024px) {
+  h2 {
+    margin: 0;
+    padding-bottom: 1vh;
+  }
   .container {
     width: 80%;
     padding: 2vh 2vh 1vh 1vh;
@@ -113,7 +153,8 @@ form {
     position: relative;
     max-height: 380px;
     overflow: auto;
-    left: 10%;
+    left: 5%;
+    padding: 0;
   }
 
   .input-box {
