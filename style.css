@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  width: 33%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1vh;
+  padding: 4vh;
+  box-shadow: 0 2vh 3vh black;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 4vh;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 2vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vh 0;
+}
+
+.input-box {
+  display: flex;
+  padding-bottom: 1.5vh;
+}
+
+.input-box:nth-child(n) {
+  justify-content: end;
+}
+
+.input-box label,
+.gender-title {
+  width: 70%;
+  color: black;
+  font-weight: bold;
+  margin: 1vh 0;
+}
+
+.gender-title {
+  font-size: 2vh;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 0 1vh;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.input-box input:is(:focus, :valid) {
+  box-shadow: 0 0.7vh 1.2vh rgba(0, 0, 0, 0.3);
+}
+
+.gender-category {
+  color: black;
+}
+
+.gender-category label {
+  padding: 0 4vh 0 1vh;
+}
+
+.gender-category label,
+.gender-category input {
+  cursor: pointer;
+}
+
+.button-container {
+  margin: 2vh 0;
+}
+
+.button-container button {
+  width: 100%;
+  margin-top: 2vh;
+  padding: 1.5vh;
+  font-size: 3vh;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, white, black);
+}
+
+.button-container button:hover {
+  background-image: linear-gradient(to right, black, white);
+}
+
+form {
+  width: 90%;
+}
+
+@media (width <= 1024px) {
+  .container {
+    width: 80%;
+    padding: 2vh 2vh 1vh 1vh;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .content {
+    position: relative;
+    max-height: 380px;
+    overflow: auto;
+    left: 10%;
+  }
+
+  .input-box {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 1vh;
+  }
+
+  .input-box input {
+    position: relative;
+    display: flex;
+    width: 80%;
+  }
+
+  .input-box:nth-child(n) {
+    justify-content: space-between;
+  }
+
+  .gender-category {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .content::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .button-container button {
+    font-size: 2vh;
+  }
+}
